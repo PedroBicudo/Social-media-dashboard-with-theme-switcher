@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <title>Frontend Mentor | [Challenge Name Here]</title>
+        <link rel="stylesheet" href="app/css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body data-theme="light">
+        <header class="main-header flex">
+            <div class="main-header__wrapper">
+                <h1 class="main-header__title">Social Media Dashboard</h1>
+                <p class="main-header__followers">Total Followers: 23,004</p>
+                <hr class="main-header__row hide-for-desktop" />
+            </div>
+            <div class="toggle-theme-container flex flex-ai-c">
+                <p class="theme-text">Dark Theme</p>
+                <button
+                    id="js-toggle-theme-btn"
+                    class="toggle-theme-btn flex flex-ai-c"
+                >
+                    <div class="inner-circle"></div>
+                </button>
+            </div>
+        </header>
+        <main class="flex flex-dir-col">
+            <!-- Followers -->
+            <section class="followers-container flex flex-wrap">
+                <!-- Facebook -->
+                <div
+                    class="
+                        followers-card followers-card--facebook
+                        flex flex-dir-col flex-ai-c flex-jc-sa
+                    "
+                >
+                    <header class="flex flex-ai-c flex-jc-c">
+                        <h3 class="followers-card__title flex flex-ai-end">
+                            <span class="icon icon--facebook"></span>
+                            @nathanf
+                        </h3>
+                    </header>
+                    <div
+                        class="
+                            followers-card__total
+                            flex flex-dir-col flex-ai-c
+                        "
+                    >
+                        <strong class="number number--big">1987</strong>
+                        <span class="followers-text">Followers</span>
+                    </div>
+                    <p class="status status--positive">12 Today</p>
+                </div>
+
+                <!-- Twitter -->
+                <div
+                    class="
+                        followers-card followers-card--twitter
+                        flex flex-dir-col flex-ai-c flex-jc-sa
+                    "
+                >
+                    <header class="flex flex-ai-c flex-jc-c">
+                        <h3 class="followers-card__title flex flex-ai-end">
+                            <span class="icon icon--twitter"></span>
+                            @nathanf
+                        </h3>
+                    </header>
+                    <div
+                        class="
+                            followers-card__total
+                            flex flex-dir-col flex-ai-c
+                        "
+                    >
+                        <strong class="number number--big">1044</strong>
+                        <span class="followers-text">Followers</span>
+                    </div>
+                    <p class="status status--positive">99 Today</p>
+                </div>
+
+                <!-- Instagram -->
+                <div
+                    class="
+                        followers-card followers-card--instagram
+                        flex flex-dir-col flex-ai-c flex-jc-sa
+                    "
+                >
+                    <header class="flex flex-ai-c flex-jc-c">
+                        <h3 class="followers-card__title flex flex-ai-end">
+                            <span class="icon icon--instagram"></span>
+                            @realnathanf
+                        </h3>
+                    </header>
+                    <div
+                        class="
+                            followers-card__total
+                            flex flex-dir-col flex-ai-c
+                        "
+                    >
+                        <strong class="number number--big">11k</strong>
+                        <span class="followers-text">Followers</span>
+                    </div>
+                    <p class="status status--positive">1099 Today</p>
+                </div>
+
+                <!-- Youtube -->
+                <div
+                    class="
+                        followers-card followers-card--youtube
+                        flex flex-dir-col flex-ai-c flex-jc-sa
+                    "
+                >
+                    <header class="flex flex-ai-c flex-jc-c">
+                        <h3 class="followers-card__title flex flex-ai-end">
+                            <span class="icon icon--youtube"></span>
+                            Nathan F.
+                        </h3>
+                    </header>
+                    <div
+                        class="
+                            followers-card__total
+                            flex flex-dir-col flex-ai-c
+                        "
+                    >
+                        <strong class="number number--big">8239</strong>
+                        <span class="followers-text">Subscribers</span>
+                    </div>
+                    <p class="status status--negative">144 Today</p>
+                </div>
+            </section>
+
+            <!-- Overview -->
+            <section class="overview-section flex flex-dir-col">
+                <header>
+                    <h2 class="overview-section__title">Overview Today</h2>
+                </header>
+                <div class="overview-container">
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">Page Views</h3>
+                            </header>
+                            <span class="icon icon--facebook"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">87</strong>
+                            <p class="status status--positive">3%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">Likes</h3>
+                            </header>
+                            <span class="icon icon--facebook"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">52</strong>
+                            <p class="status status--negative">2%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">Likes</h3>
+                            </header>
+                            <span class="icon icon--instagram"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">5462</strong>
+                            <p class="status status--positive">2257%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">
+                                    Profile Views
+                                </h3>
+                            </header>
+                            <span class="icon icon--instagram"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">52k</strong>
+                            <p class="status status--positive">1375%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">Retweets</h3>
+                            </header>
+                            <span class="icon icon--twitter"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">117</strong>
+                            <p class="status status--positive">303%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">Likes</h3>
+                            </header>
+                            <span class="icon icon--twitter"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">507</strong>
+                            <p class="status status--positive">553%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">Likes</h3>
+                            </header>
+                            <span class="icon icon--youtube"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">107</strong>
+                            <p class="status status--negative">19%</p>
+                        </div>
+                    </div>
+
+                    <div class="overview-card flex flex-dir-col">
+                        <div class="flex flex-jc-sb flex-ai-c">
+                            <header class="overview-card__header">
+                                <h3 class="overview-card__title">
+                                    Total Views
+                                </h3>
+                            </header>
+                            <span class="icon icon--youtube"></span>
+                        </div>
+                        <div class="flex flex-jc-sb flex-ai-baseline">
+                            <strong class="number number--medium">1407</strong>
+                            <p class="status status--negative">12%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer flex flex-jc-c">
+            <div class="attribution">
+                Challenge by
+                <a
+                    class="attribution__link"
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a
+                    class="attribution__link"
+                    href="https://github.com/PedroBicudo"
+                    >Pedro Bicudo</a
+                >.
+            </div>
+        </footer>
+        <script src="app/js/script.js"></script>
+    </body>
+</html>
